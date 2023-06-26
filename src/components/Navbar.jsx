@@ -19,13 +19,6 @@ const Navbar = (page) => {
                     </li>
 
                     <li className='nav-item'>
-                        {page.page == 'transferencia' 
-                            ? <Link className='nav-link active text-light' to="/transferencia">Transferir Produto</Link>
-                            : <Link className='nav-link text-light' to="/transferencia">Transferir Produto</Link>
-                        } 
-                    </li>
-
-                    <li className='nav-item'>
                         {page.page == 'relatorio' 
                             ? <Link className='nav-link active text-light' to="/relatorios">Relatorios</Link>
                             : <Link className='nav-link text-light' to="/relatorios">Relatorios</Link>

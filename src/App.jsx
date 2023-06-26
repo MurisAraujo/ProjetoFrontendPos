@@ -11,7 +11,6 @@ const router = createBrowserRouter(
       <Route path='/' element={<Produtos/>}/>
       <Route path='/estoques' element={<EstoquesMovimentação/>}/>
       <Route path='/relatorios' element={<Relatorios/>}/>
-      <Route path='/transferencia' element={<Transferencia/>}/>
     </>
   )
 )
