@@ -23,6 +23,7 @@ const EstoqueDeposito = () => {
         <>
             <Navbar page={"estoqueDeposito"}/>
             <div className="container">
+                <h1 className="mt-5 mb-4">Depositos</h1>
                 <table className="table table-striped">
                     <thead>
                         <tr>
