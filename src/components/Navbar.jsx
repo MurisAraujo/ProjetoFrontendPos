@@ -19,9 +19,30 @@ const Navbar = (page) => {
                     </li>
 
                     <li className='nav-item'>
-                        {page.page == 'relatorio' 
-                            ? <Link className='nav-link active text-light' to="/relatorios">Relatorios</Link>
-                            : <Link className='nav-link text-light' to="/relatorios">Relatorios</Link>
+                        {page.page == 'estoqueGeral' 
+                            ? <Link className='nav-link active text-light' to="/estoque-geral">Estoque Geral</Link>
+                            : <Link className='nav-link text-light' to="/estoque-geral">Estoque Geral</Link>
+                        } 
+                    </li>
+
+                    <li className='nav-item'>
+                        {page.page == 'estoqueDeposito' 
+                            ? <Link className='nav-link active text-light' to="/estoque-deposito">Estoque deposito</Link>
+                            : <Link className='nav-link text-light' to="/estoque-deposito">Estoque deposito</Link>
+                        } 
+                    </li>
+
+                    <li className='nav-item'>
+                        {page.page == 'reposicaoDeposito' 
+                            ? <Link className='nav-link active text-light' to="/reposicao-deposito">Reposição Deposito</Link>
+                            : <Link className='nav-link text-light' to="/reposicao-deposito">Reposição Deposito</Link>
+                        } 
+                    </li>
+
+                    <li className='nav-item'>
+                        {page.page == 'compraProduto' 
+                            ? <Link className='nav-link active text-light' to="/compra-produto">Reposição de Produtos</Link>
+                            : <Link className='nav-link text-light' to="/compra-produto">Reposição de Produtos</Link>
                         } 
                     </li>
                 </ul>

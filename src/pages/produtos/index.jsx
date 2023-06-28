@@ -13,13 +13,7 @@ const Produtos = () => {
 
     async function getProduto(){
         try{
-            await api.get('produtos',{
-                header: {
-                    'Content-Type': 'application/json;charset=UTF-8',
-                    'Access-Control-Allow-Origin': '*',
-                    "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
-                }
-            }).then( response => {
+            await api.get('produtos').then( response => {
                 setProdutos(response.data);
             })
         }catch (error){
